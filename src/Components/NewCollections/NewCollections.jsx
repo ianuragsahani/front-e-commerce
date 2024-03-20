@@ -6,7 +6,7 @@ const NewCollections = () => {
   const [newCollections, setNewCollections] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/newcollections')
+    fetch('https://backend-km2o.onrender.com/newcollections')
       .then(response => response.json())
       .then(data => setNewCollections(data))
       .catch(error => console.error('Error fetching new collections:', error));
